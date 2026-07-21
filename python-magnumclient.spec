@@ -24,7 +24,7 @@ command-line tool (magnum).
 %global common_desc_tests Python-magnumclient test subpackage
 
 Name:           python-%{pname}
-Version:        4.8.0
+Version:        4.8.1
 Release:        1%{?dist}
 Summary:        Client library for Magnum API
 
@@ -154,6 +154,8 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %{python3_sitelib}/%{pname}/tests
 
 %changelog
+* Thu Jul 21 2026 Luca Albrecht <luca@albright.one> - 4.8.1-1
+- Update to upstream version 4.8.1
 * Thu Jul 21 2026 Luca Albrecht <luca@albright.one> - 4.8.0-1
 - Update to upstream version 4.8.0
 * Mon Jul 20 2026 Luca Albrecht <luca@albright.one> - 4.7.1-1
