@@ -1,5 +1,5 @@
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
-%global sources_gpg_sign 0x22284f69d9eccdf3df7819791c711af193ff8e54
+%global sources_gpg_sign 0xc71b007ef97887fd8fb6365ceb4fd6d618e62181
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 # we are excluding some BRs from automatic generator
 %global excluded_brs doc8 bandit pre-commit hacking flake8-import-order
@@ -24,7 +24,7 @@ command-line tool (magnum).
 %global common_desc_tests Python-magnumclient test subpackage
 
 Name:           python-%{pname}
-Version:        4.8.1
+Version:        4.9.0
 Release:        1%{?dist}
 Summary:        Client library for Magnum API
 
@@ -154,6 +154,8 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %{python3_sitelib}/%{pname}/tests
 
 %changelog
+* Thu Jul 21 2026 Luca Albrecht <luca@albright.one> - 4.9.0-1
+- Update to upstream version 4.9.0
 * Thu Jul 21 2026 Luca Albrecht <luca@albright.one> - 4.8.1-1
 - Update to upstream version 4.8.1
 * Thu Jul 21 2026 Luca Albrecht <luca@albright.one> - 4.8.0-1
